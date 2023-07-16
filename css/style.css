@@ -2,11 +2,10 @@
     display: grid;
     border: solid 1px red;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 200px);
-    gap: 5px 5px;
+    grid-template-rows: repeat(5, 200px);
+    gap: 3px 3px;
     grid-template-areas:
       "hd hd hd"
-      "main main side"
       "main main side"
       "main main side"
       "main main side"
@@ -24,7 +23,9 @@
     }
   
   .main { grid-area: main;
-        background-color: #FEE440; 
+        padding: 3px;
+        background-color: #FEE440;
+
           /* border: solid 1px blue; */
     }
   
@@ -44,7 +45,7 @@
 .menu {
   display: flex;
   flex-direction: row;
-  text-shadow: 1px -2px 7px rgba(0,0,0,0.65);
+  text-shadow: 1px 2px 7px rgba(0,0,0,0.65);
   width: 100%;
   height: auto;
   justify-content: center;
@@ -69,12 +70,54 @@
   width: 300px;
 }
 
+#nestedGrid {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 3px;
+  color: white;
+}
+
+.photo {
+  width: 250px;
+  height: 150px;
+  border: 1px solid red;
+  background-color: yellow;
+}
+
+/* side eyes */
+
+#one{
+  background-image:url(/simple-blog-page/src/eye1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#two{
+  background-image:url(/simple-blog-page/src/eye2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#three{
+  background-image:url(/simple-blog-page/src/eye3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#four{
+  background-image:url(/simple-blog-page/src/eye4.png);
+  background-size: cover;
+  background-position: center;
+}
 
 /* General styles */
   
   h1 {
     font-family: 'Maven Pro', sans-serif;
 }
+
 
   body {
     font-family: 'Vollkorn', serif;
@@ -92,4 +135,21 @@
 
   a:hover {
     color: #F15BB5;
+  }
+
+  button {
+    width: 100px;
+    height: auto;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 50px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+    background-color: #00F5D4;
+    margin-top: 2px;
+  }
+
+  button:hover {
+    background-color: #F15BB5;
+    color: white;
   }

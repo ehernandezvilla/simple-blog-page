@@ -1,0 +1,43 @@
+.container {  
+    display: grid;
+    border: solid 1px red;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "hd hd hd"
+      "main main side"
+      "main main side"
+      "ft ft ft";
+    }
+  
+  .hd { grid-area: hd; 
+        border: solid 1px blue;
+    }
+  
+  .ft { grid-area: ft;
+        border: solid 1px blue; 
+    }
+  
+  .main { grid-area: main; 
+          border: solid 1px blue;
+    }
+  
+  .side { 
+    grid-area: side; 
+    border: solid 1px blue;
+    }
+
+  #content_main {
+    display: flex;
+    border: solid 2px salmon;
+  }
+  
+  h1 {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+ body {
+    font-family: 'Vollkorn', serif;
+ }

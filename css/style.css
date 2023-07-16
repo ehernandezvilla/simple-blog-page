@@ -44,14 +44,13 @@
 .menu {
   display: flex;
   flex-direction: row;
-  color: aliceblue;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px 1px black;
   width: 100%;
   height: auto;
   justify-content: center;
   border: 2px solid red;
   align-items: center;
-  font-size: larger;
+  font-size: 2em;
   font-weight: 900;
   font-family: 'Maven Pro', sans-serif;
 
@@ -80,4 +79,13 @@
 
   li {
     display: inline;
+  }
+
+  a {
+    color: #00F5D4;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #F15BB5;
   }

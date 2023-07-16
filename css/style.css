@@ -38,7 +38,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .menu {
@@ -85,7 +85,7 @@
   }
 
   a {
-    color: #00F5D4;
+    color: #e4fffb;
     text-decoration: none;
     padding: 10px;
   }

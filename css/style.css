@@ -101,7 +101,7 @@
 /* side content */
 
 .content {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: auto;
   color: whitesmoke;
   display: grid;
@@ -192,6 +192,11 @@
     font-family: 'Maven Pro', sans-serif;
 }
 
+.footer h2 {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-style:wavy;
+}
 
   body {
     font-family: 'Vollkorn', serif;

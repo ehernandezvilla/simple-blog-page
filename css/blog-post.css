@@ -3,13 +3,42 @@
 .container {  
     display: grid;
     /* border: solid 1px red; */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
     gap: 1px;
     grid-template-areas:
-      "hd hd hd"
-      "main main main"
-      "main main main"
-      "main main main"
-      "ft ft ft";
+    "hd hd hd"
+    "main main main"
+    "ft ft ft";
     }
+
+.main {
+    border: 1px red solid;
+}
+
+.main > h2, h3{
+    text-align: center;
+}
+
+#BlogGrid {
+    border: 1px blue solid;
+    display: grid;
+    align-items: start;
+    text-align: center;
+    border-radius: 80%;
+    border-style: groove;
+    border-block-color: #9b5de5;
+    border-top-style: dotted;
+    border-top-width: 3px;
+    border-bottom-width: 10px;
+}
+
+.postone > img {
+    height: 50%;
+    width: 50%;
+    border-radius: 80%;
+}
+
+.postone > img:hover {
+    opacity: 0.8;
+}

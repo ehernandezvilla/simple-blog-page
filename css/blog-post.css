@@ -1,2 +1,15 @@
 @import url(style.css);
 
+.container {  
+    display: grid;
+    /* border: solid 1px red; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 1px;
+    grid-template-areas:
+      "hd hd hd"
+      "main main main"
+      "main main main"
+      "main main main"
+      "ft ft ft";
+    }

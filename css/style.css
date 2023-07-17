@@ -1,9 +1,9 @@
 .container {  
     display: grid;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 200px);
-    gap: 3px 3px;
+    grid-template-rows: repeat(5, auto);
+    gap: 1px;
     grid-template-areas:
       "hd hd hd"
       "main main side"
@@ -56,6 +56,13 @@
   font-family: 'Maven Pro', sans-serif;
 }
 
+
+.menu > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -71,22 +78,41 @@
 }
 
 #nestedGrid {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: 50% 50%;
-  gap: 3px;
+  gap: 1%;
   color: white;
 }
 
 .photo {
-  width: 250px;
-  height: 150px;
+  width: auto;
+  height: 200px;
+  opacity: 0.7;
+  /* border: 1px solid red; */
+  /* background-color: yellow; */
+}
+
+.photo:hover{
+  opacity: 1;
+}
+
+/* side content */
+
+.content {
   border: 1px solid red;
-  background-color: yellow;
+  height: auto;
+  color: whitesmoke;
+  display: grid;
+  padding: 5px;
 }
 
 /* side eyes */
+
+.side > h2 {
+  text-align: center;
+}
 
 #one{
   background-image:url(/simple-blog-page/src/eye1.png);
@@ -116,15 +142,15 @@
 
 #nestedFooter {
   display: flex;
-  border: solid 2px red;
+  /* border: solid 2px red; */
   flex-direction: row;
   align-items: stretch;
   justify-content: space-around;
-  gap: 10px;
+  gap: 2px;
 }
 
 #footer1 {
-  border: solid 2px blue;
+  /* border: solid 2px blue; */
   background-image:url(/simple-blog-page/src/logofooter2.svg);
   background-size: cover;
   background-position: center;
@@ -133,17 +159,31 @@
   height: 150px;
 }
 
+
 #footer2 {
-  border: solid 2px blue;
+  /* border: solid 2px blue; */
+  padding: auto;
 }
 
-#footer3 {
+#footer2 > ul {
+  color: white;
+  font-size: initial;
+  padding: 5px;
+  list-style-type: disclosure-closed;
+}
+
+#footer2 > li {
+  display: list-item;
+}
+
+
+/* #footer3 {
   border: solid 2px blue;
 }
 
 #footer4 {
   border: solid 2px blue;
-}
+} */
 
 
 /* General styles */
@@ -155,11 +195,11 @@
 
   body {
     font-family: 'Vollkorn', serif;
-}
-
-  li {
-    display: inline;
   }
+
+  /* li {
+    display: inline !important;
+  } */
 
   a {
     color: #e4fffb;

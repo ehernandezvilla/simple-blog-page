@@ -23,6 +23,12 @@
 #BlogGrid {
     border: 1px blue solid;
     display: grid;
+    grid-area: 
+    "postone"
+    "postcontent"
+    "autor";
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
     align-items: start;
     text-align: center;
     border-radius: 80%;
@@ -31,6 +37,22 @@
     border-top-style: dotted;
     border-top-width: 3px;
     border-bottom-width: 10px;
+    gap: 10px;
+}
+
+.postone{
+
+    border: 1px solid red;
+}
+
+.postcontent{
+    border-radius: 10%;
+    background-color: white;
+    border: 1px solid red;
+}
+.autor{
+    border-radius: 10%;
+    border: 1px solid red;
 }
 
 .postone > img {
@@ -41,4 +63,20 @@
 
 .postone > img:hover {
     opacity: 0.8;
+}
+
+.avatar {
+} 
+
+.socialsharing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    columns: 3;
+    border: 1px solid blue;
+}
+
+.socialsharing > img {
+    width: 10%;
+    height: auto;
 }

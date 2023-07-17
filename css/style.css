@@ -112,6 +112,40 @@
   background-position: center;
 }
 
+/* Footer */
+
+#nestedFooter {
+  display: flex;
+  border: solid 2px red;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+#footer1 {
+  border: solid 2px blue;
+  background-image:url(/simple-blog-page/src/logofooter2.svg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 5px;
+  width: 150px;
+  height: 150px;
+}
+
+#footer2 {
+  border: solid 2px blue;
+}
+
+#footer3 {
+  border: solid 2px blue;
+}
+
+#footer4 {
+  border: solid 2px blue;
+}
+
+
 /* General styles */
   
   h1 {

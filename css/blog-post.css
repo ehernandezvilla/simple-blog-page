@@ -73,10 +73,28 @@
     flex-direction: row;
     justify-content: center;
     columns: 3;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .socialsharing > img {
-    width: 10%;
-    height: auto;
+    width: 3em;
+    height: 3em;
+    margin: 5px;
+}
+
+#tw {
+    height: 50px;
+    width: 50px;
+}
+
+#fb {
+    padding-top: 7px;
+    height: 35px;
+    width: 35px;
+}
+
+#in {
+    padding-top: 5px;
+    height: 42px;
+    width: 42px;
 }

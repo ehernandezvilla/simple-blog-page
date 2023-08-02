@@ -1,13 +1,36 @@
 @import url(style.css);
 
-.container {  
-    display: grid;
-    /* border: solid 1px red; */
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
-    gap: 1px;
-    grid-template-areas:
-    "hd hd hd"
-    "main main main"
-    "ft ft ft";
+
+@media(width >= 800px){
+
+    .container {  
+        display: grid;
+        border: solid 1px red;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        gap: 1px;
+        grid-template-areas:
+        "hd hd hd"
+        "main main main"
+        "ft ft ft";
+        }
+
+    .main {
+        background-color: aqua !important;
+    }
+}
+
+@media(width < 800px){
+
+    .container {  
+        display: grid;
+        border: solid 1px red;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 0px;
+        grid-template-areas:
+        "hd hd"
+        "main main"
+        "ft ft";
+        }
     }

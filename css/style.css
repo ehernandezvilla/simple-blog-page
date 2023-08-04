@@ -115,19 +115,19 @@
 }
 
 #one{
-  background-image:url(/simple-blog-page/src/eye1.png);
+  background-image:url(/src/eye1.png);
   background-size: cover;
   background-position: center;
 }
 
 #two{
-  background-image:url(/simple-blog-page/src/eye2.png);
+  background-image:url(/src/eye2.png);
   background-size: cover;
   background-position: center;
 }
 
 #three{
-  background-image:url(/simple-blog-page/src/eye3.png);
+  background-image:url(/src/eye3.png);
   background-size: cover;
   background-position: center;
 }

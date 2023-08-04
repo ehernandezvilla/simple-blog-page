@@ -3,14 +3,13 @@
 .container {  
     display: grid;
     /* border: solid 1px red; */
-    grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     gap: 1px;
     grid-template-areas:
     "hd hd hd"
     "main main main"
     "ft ft ft";
-    }
+}
 
 /* .main {
     border: 1px red solid;
@@ -27,7 +26,6 @@
     "postone"
     "postcontent"
     "autor";
-    grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     align-items: start;
     text-align: center;
@@ -101,4 +99,26 @@
     padding-top: 5px;
     height: 42px;
     width: 42px;
+}
+
+/* Estilos para pantallas con un ancho menor a 700px */
+@media only screen and (max-width: 699px) {
+  .container {  
+    grid-template-columns: 1fr;
+  }
+
+  #BlogGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para pantallas con un ancho de 700px o más */
+@media only screen and (min-width: 700px) {
+  .container {  
+    grid-template-columns: repeat(3, auto);
+  }
+
+  #BlogGrid {
+    grid-template-columns: auto;
+  }
 }

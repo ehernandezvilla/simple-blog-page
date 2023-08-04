@@ -1,45 +1,37 @@
 .container {  
-    display: grid;
-    /* border: solid 1px red; */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
-    gap: 1px;
-    grid-template-areas:
-      "hd hd hd"
-      "main main side"
-      "main main side"
-      "main main side"
-      "ft ft ft";
-    }
-  
-  .hd { grid-area: hd; 
-        background-color: #00F5D4;
-        /* border: solid 1px blue; */
-    }
-  
-  .ft { grid-area: ft;
-        background-color: #9B5DE5;
-        /* border: solid 1px blue;  */
-    }
-  
-  .main { grid-area: main;
-        padding: 3px;
-        background-color: #FEE440;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 1px;
+  grid-template-areas:
+    "hd hd hd"
+    "main main side"
+    "main main side"
+    "main main side"
+    "ft ft ft";
+  }
 
-          /* border: solid 1px blue; */
-    }
-  
-  .side { 
-    grid-area: side; 
-      background-color: #00BBF9;
-    /* border: solid 1px blue; */
-    }
+.hd { grid-area: hd; 
+  background-color: #00F5D4;
+}
 
-/* Navbar styles */
+.ft { grid-area: ft;
+  background-color: #9B5DE5;
+}
+
+.main { grid-area: main;
+  padding: 3px;
+  background-color: #FEE440;
+}
+
+.side { 
+  grid-area: side; 
+  background-color: #00BBF9;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
-  /* border: 2px solid green; */
 }
 
 .menu {
@@ -49,19 +41,16 @@
   width: 100%;
   height: auto;
   justify-content: center;
-  /* border: 2px solid red; */
   align-items: center;
   font-size: 2em;
   font-weight: 900;
   font-family: 'Maven Pro', sans-serif;
 }
 
-
 .menu > ul {
   list-style-type: none;
   display: flex;
 }
-
 
 .logo {
   display: flex;
@@ -70,7 +59,6 @@
   align-items: center;
   width: 300px;
   height: 150px;
-  /* border: 2px solid blue; */
 }
 
 .logo > img {
@@ -78,7 +66,6 @@
 }
 
 #nestedGrid {
-  /* border: 2px solid red; */
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: 50% 50%;
@@ -90,25 +77,18 @@
   width: auto;
   height: 200px;
   opacity: 0.7;
-  /* border: 1px solid red; */
-  /* background-color: yellow; */
 }
 
 .photo:hover{
   opacity: 1;
 }
 
-/* side content */
-
 .content {
-  /* border: 1px solid red; */
   height: auto;
   color: whitesmoke;
   display: grid;
   padding: 5px;
 }
-
-/* side eyes */
 
 .side > h2 {
   text-align: center;
@@ -138,11 +118,8 @@
   background-position: center;
 }
 
-/* Footer */
-
 #nestedFooter {
   display: flex;
-  /* border: solid 2px red; */
   flex-direction: row;
   align-items: stretch;
   justify-content: space-around;
@@ -150,7 +127,6 @@
 }
 
 #footer1 {
-  /* border: solid 2px blue; */
   background-image:url(/simple-blog-page/src/logofooter2.svg);
   background-size: cover;
   background-position: center;
@@ -159,9 +135,7 @@
   height: 150px;
 }
 
-
 #footer2 {
-  /* border: solid 2px blue; */
   padding: auto;
 }
 
@@ -176,20 +150,8 @@
   display: list-item;
 }
 
-
-/* #footer3 {
-  border: solid 2px blue;
-}
-
-#footer4 {
-  border: solid 2px blue;
-} */
-
-
-/* General styles */
-  
-  h1 {
-    font-family: 'Maven Pro', sans-serif;
+h1 {
+  font-family: 'Maven Pro', sans-serif;
 }
 
 .footer h2 {
@@ -198,37 +160,111 @@
   text-decoration-style:wavy;
 }
 
-  body {
-    font-family: 'Vollkorn', serif;
+body {
+  font-family: 'Vollkorn', serif;
+}
+
+a {
+  color: #e4fffb;
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover {
+  color: #F15BB5;
+}
+
+button {
+  width: 100px;
+  height: auto;
+  margin: 3px;
+  padding: 3px;
+  border-radius: 50px;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 900;
+  background-color: #00F5D4;
+  margin-top: 2px;
+}
+
+button:hover {
+  background-color: #F15BB5;
+  color: white;
+}
+
+/* Media queries */
+.photo {
+  width: auto;
+  height: 200px;
+  opacity: 0.7;
+  object-fit: cover; /* this line is added */
+}
+
+/* Media queries */
+@media (max-width: 699px) {
+  .container {  
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, auto);
+      grid-template-areas:
+      "hd"
+      "navbar"
+      "main"
+      "side"
+      "ft";
   }
 
-  /* li {
-    display: inline !important;
-  } */
-
-  a {
-    color: #e4fffb;
-    text-decoration: none;
-    padding: 10px;
+  .main {
+      min-height: 30vh;
+      overflow: auto;
   }
 
-  a:hover {
-    color: #F15BB5;
+  .side {
+      min-height: 30vh;
+      overflow: auto;
   }
 
-  button {
-    width: 100px;
-    height: auto;
-    margin: 3px;
-    padding: 3px;
-    border-radius: 50px;
-    font-family: 'Maven Pro', sans-serif;
-    font-weight: 900;
-    background-color: #00F5D4;
-    margin-top: 2px;
+  .navbar, .menu {
+      flex-direction: column;
   }
 
-  button:hover {
-    background-color: #F15BB5;
-    color: white;
+  #nestedGrid {
+      grid-template-columns: 1fr;
   }
+
+  .photo {
+      width: 100%; 
+      height: auto;
+  }
+
+  .content {
+      text-align: center; /* align text to center */
+  }
+
+  .content p {
+      display: block;  /* show the p elements */
+      position: relative;
+      z-index: 2;  /* make the p elements appear above the image */
+      padding: 1em;  /* give some space around the text */
+      background-color: rgba(0, 0, 0, 0.5);  /* add a semi-transparent background to the text */
+  }
+}
+
+@media (min-width: 700px) {
+  .container {  
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas:
+      "hd hd hd"
+      "main main side"
+      "main main side"
+      "main main side"
+      "ft ft ft";
+  }
+
+  .navbar, .menu {
+      flex-direction: row;
+  }
+
+  #nestedGrid {
+      grid-template-columns: repeat(2, auto);
+  }
+}

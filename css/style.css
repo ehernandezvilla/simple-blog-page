@@ -95,25 +95,25 @@
 }
 
 #one{
-  background-image:url(./src/eye1.png);
+  background-image:url(/src/eye1.png);
   background-size: cover;
   background-position: center;
 }
 
 #two{
-  background-image:url(./src/eye2.png);
+  background-image:url(/src/eye2.png);
   background-size: cover;
   background-position: center;
 }
 
 #three{
-  background-image:url(./src/eye3.png);
+  background-image:url(/src/eye3.png);
   background-size: cover;
   background-position: center;
 }
 
 #four{
-  background-image:url(./src/eye4.png);
+  background-image:url(/src/eye4.png);
   background-size: cover;
   background-position: center;
 }
@@ -127,7 +127,7 @@
 }
 
 #footer1 {
-  background-image:url(./src/logofooter2.svg);
+  background-image:url(/src/logofooter2.svg);
   background-size: cover;
   background-position: center;
   margin-top: 5px;

@@ -1,3 +1,3 @@
 # Simple blog page example
 
-Simple blog page example HTML & CSS. 
+Simple blog page example HTML & CSS.

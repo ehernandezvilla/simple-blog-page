@@ -19,6 +19,11 @@
     text-align: center;
 }
 
+.postone img {
+    border-radius: 50%; /* Esto hará que la imagen sea redonda */
+    width: 50%;
+}
+
 #BlogGrid {
     border: 1px blue solid;
     display: grid;

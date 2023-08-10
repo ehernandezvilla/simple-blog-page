@@ -31,12 +31,26 @@
   max-height: 300px; /* Ajustar según sea necesario */
 }
 
-#five.content {
+
+#four.content {
   flex: 0 0 100%;
   /* border: 1px solid red; */
   margin: 5px;
   margin-top: 30px; /* Aumento del margen */
   padding-top: 100px; /* Aumento del padding */
+  color: antiquewhite;
+  clear: both; /* Asegura que no haya floats afectando este elemento */
+}
+
+#four p {
+  color: yellow;
+}
+
+#five.content {
+  flex: 0 0 100%;
+  /* border: 1px solid red; */
+  margin: 5px;
+  margin-top: 30px; /* Aumento del margen */
   color: antiquewhite;
   clear: both; /* Asegura que no haya floats afectando este elemento */
 }

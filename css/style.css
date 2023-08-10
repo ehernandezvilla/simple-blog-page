@@ -1,51 +1,6 @@
-.container {  
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, auto);
-  gap: 1px;
-  grid-template-areas:
-    "hd hd hd"
-    "main main side"
-    "main main side"
-    "main main side"
-    "ft ft ft";
-  }
-
-.hd { grid-area: hd; 
-  background-color: #00F5D4;
-}
-
-.ft { grid-area: ft;
-  background-color: #9B5DE5;
-}
-
-.main { grid-area: main;
-  padding: 3px;
-  background-color: #FEE440;
-}
-
-.side { 
-  grid-area: side; 
-  background-color: #00BBF9;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  text-shadow: 1px 2px 7px rgba(0,0,0,0.65);
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  font-weight: 900;
-  font-family: 'Maven Pro', sans-serif;
-}
+@import url('1.css');
+@import url('2.css');
+@import url('3.css');
 
 .menu > ul {
   list-style-type: none;

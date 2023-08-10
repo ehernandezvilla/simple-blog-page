@@ -1,0 +1,20 @@
+.hd {
+    grid-area: hd;
+    background-color: #00F5D4;
+}
+
+.ft {
+    grid-area: ft;
+    background-color: #9B5DE5;
+}
+
+.main {
+    grid-area: main;
+    padding: 3px;
+    background-color: #FEE440;
+}
+
+.side {
+    grid-area: side;
+    background-color: #00BBF9;
+}
